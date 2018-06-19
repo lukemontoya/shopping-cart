@@ -7,7 +7,7 @@ class App extends Component {
       <div className="App">
         <CartHeader />
         <CartItems />
-        <CartFooter />
+        <CartFooter copyright = {'Your Mom 2017'}/>
 
       </div>
     );
@@ -20,9 +20,9 @@ const CartHeader = () => (
   </nav>
 )
 
-const CartFooter = () => (
+const CartFooter = ( props ) => (
   <nav className="navbar navbar-dark bg-dark">
-    <a className="navbar-brand" href="#">&copy; 2018</a>
+    <a className="navbar-brand" href="#">&copy; {props.copyright}</a>
   </nav>
 )
 
